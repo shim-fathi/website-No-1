@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4A0E8F">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="France VTC">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.google.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VTC Services Paris | CDG Transfers, Orly VTC, Disneyland, Corporate & Long Distance – France VTC</title>
+  <meta name="description" content="All France VTC services: CDG airport transfers, Orly to city centre VTC, CDG to Disneyland Paris VTC, corporate VTC service Paris, long distance VTC France and door to door VTC Paris.">
+  <meta name="keywords" content="CDG airport transfer VTC, Orly to city centre VTC, CDG to Disneyland Paris VTC, corporate VTC service Paris, long distance VTC France, door to door VTC Paris, VTC services Paris">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.francevtc.com/services.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VTC Services Paris | France VTC – Airport, Corporate, Long Distance">
+  <meta property="og:description" content="Complete VTC Paris services: CDG & Orly airport transfers, Disneyland VTC, corporate transport, long distance VTC France. Fixed rates, 24/7.">
+  <meta property="og:url" content="https://www.francevtc.com/services.html">
+  <meta property="og:site_name" content="France VTC">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VTC Services Paris | France VTC">
+  <meta name="twitter:description" content="CDG & Orly airport transfers, Disneyland Paris VTC, corporate & long distance VTC France.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "VTC Chauffeur Service",
+    "provider": {
+      "@type": "TaxiService",
+      "name": "France VTC",
+      "telephone": "+33614332708",
+      "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" }
+    },
+    "areaServed": "France",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "France VTC Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CDG Airport Transfer VTC"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Orly to City Centre VTC"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CDG to Disneyland Paris VTC"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corporate VTC Service Paris"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Long Distance VTC France"}}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+/* ===== FRANCE VTC - SHARED STYLES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --deep-purple: #4A0E8F;
+  --purple-mid: #6B21CC;
+  --purple-light: #8B5CF6;
+  --lavender: #C4B5FD;
+  --lavender-soft: #EDE9FE;
+  --silver: #F8F7FF;
+  --silver-mid: #E8E4F0;
+  --grey-light: #F3F4F6;
+  --grey-mid: #9CA3AF;
+  --grey-text: #6B7280;
+  --white: #FFFFFF;
+  --purple-dark: #2D0660;
+  --purple-gradient: linear-gradient(135deg, #2D0660 0%, #4A0E8F 35%, #6B21CC 70%, #8B5CF6 100%);
+  --purple-gradient-soft: linear-gradient(135deg, #4A0E8F 0%, #7C3AED 50%, #A78BFA 100%);
+  --shadow-soft: 0 4px 24px rgba(74, 14, 143, 0.12);
+  --shadow-card: 0 8px 32px rgba(74, 14, 143, 0.15);
+  --shadow-hover: 0 16px 48px rgba(74, 14, 143, 0.25);
+  --radius: 16px;
+  --radius-lg: 24px;
+  --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2D0660;
+  background: var(--white);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+h4, h5, h6, nav, button { font-family: 'Montserrat', sans-serif; }
+
+.section-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--purple-light);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 2rem;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(196, 181, 253, 0.3);
+  box-shadow: 0 2px 20px rgba(74,14,143,0.08);
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  background: rgba(255,255,255,0.98);
+  box-shadow: 0 4px 30px rgba(74,14,143,0.15);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--purple-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-title-main {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--deep-purple);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.nav-title-sub {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--purple-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  color: #4B5563;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--deep-purple);
+  background: var(--lavender-soft);
+}
+
+.nav-cta {
+  background: var(--purple-gradient) !important;
+  color: white !important;
+  padding: 0.55rem 1.2rem !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 15px rgba(74,14,143,0.3) !important;
+}
+
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(74,14,143,0.4) !important;
+  background: var(--lavender-soft) !important;
+  color: var(--deep-purple) !important;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  background: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--deep-purple);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--purple-gradient);
+  color: white;
+  padding: 4rem 2rem 1.5rem;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.footer-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+}
+
+.footer-logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.footer-brand-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-tagline {
+  font-size: 0.82rem;
+  opacity: 0.75;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+
+.social-btn:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-2px);
+}
+
+.footer-col h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  opacity: 0.6;
+}
+
+.footer-col ul { list-style: none; }
+
+.footer-col ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.875rem;
+  transition: var(--transition);
+}
+
+.footer-col ul li a:hover {
+  color: white;
+  padding-left: 4px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.footer-contact-item .icon { flex-shrink: 0; margin-top: 2px; }
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  opacity: 0.6;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ===== FLOATING CALL BUTTON ===== */
+.float-call {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.float-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transition: var(--transition);
+  position: relative;
+}
+
+.float-btn:hover {
+  transform: scale(1.1) translateY(-3px);
+}
+
+.float-call-btn {
+  background: var(--purple-gradient);
+  color: white;
+}
+
+.float-wa-btn {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+}
+
+.float-pulse::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: rgba(107, 33, 204, 0.35);
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.fade-in.visible { opacity: 1; }
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--purple-gradient);
+  color: white;
+  text-decoration: none;
+  padding: 0.85rem 2rem;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 6px 24px rgba(74,14,143,0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(74,14,143,0.45);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--deep-purple);
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 2px solid var(--purple-light);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background: var(--lavender-soft);
+  border-color: var(--deep-purple);
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  color: var(--deep-purple);
+  text-decoration: none;
+  padding: 0.85rem 2rem;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.btn-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(196,181,253,0.2);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(196,181,253,0.5);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 6rem 2rem;
+}
+
+.section-alt {
+  background: var(--lavender-soft);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--deep-purple);
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1.05rem;
+  color: var(--grey-text);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== ICON BOX ===== */
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: var(--lavender-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+}
+
+.card:hover .icon-box {
+  background: var(--purple-gradient);
+  transform: scale(1.1);
+}
+
+/* ===== BADGE ===== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--lavender-soft);
+  color: var(--deep-purple);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+  border: 1px solid rgba(196,181,253,0.5);
+}
+
+/* ===== STARS ===== */
+.stars { color: #A78BFA; letter-spacing: 2px; }
+
+/* ===== DIVIDER ===== */
+.divider {
+  width: 60px;
+  height: 4px;
+  background: var(--purple-gradient);
+  border-radius: 2px;
+  margin: 1.2rem auto;
+}
+
+/* ===== PAGE HERO (inner pages) ===== */
+.page-hero {
+  background: var(--purple-gradient);
+  padding: 8rem 2rem 5rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='1' fill='rgba(255,255,255,0.06)'/%3E%3C/svg%3E");
+}
+
+.page-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.breadcrumb a { color: white; text-decoration: none; }
+.breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 72px; left: 0; right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-shadow: 0 8px 30px rgba(74,14,143,0.15);
+    gap: 0.25rem;
+  }
+
+  .nav-links.open { display: flex; }
+  .nav-links a { display: block; padding: 0.75rem 1rem; }
+  .hamburger { display: flex; }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .section { padding: 4rem 1.25rem; }
+  .float-call { bottom: 1.25rem; right: 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+</style>
+  <style>
+    /* ===== SERVICES PAGE STYLES ===== */
+
+    .services-intro {
+      padding: 5rem 2rem;
+      background: var(--lavender-soft);
+    }
+
+    .services-intro .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .intro-text h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--deep-purple);
+      margin-bottom: 1rem;
+    }
+
+    .intro-text p {
+      color: var(--grey-text);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .intro-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .intro-stat {
+      background: white;
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      text-align: center;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(196,181,253,0.25);
+    }
+
+    .intro-stat-num {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 2rem;
+      color: var(--deep-purple);
+      display: block;
+      line-height: 1;
+    }
+
+    .intro-stat-label {
+      font-size: 0.75rem;
+      color: var(--grey-text);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+
+    .intro-visual {
+      background: var(--purple-gradient);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2rem;
+      text-align: center;
+      color: white;
+      box-shadow: var(--shadow-hover);
+    }
+
+    .intro-visual .big-icon { font-size: 5rem; margin-bottom: 1.5rem; }
+
+    .intro-visual h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .intro-visual p {
+      opacity: 0.85;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* SERVICE CARDS DETAILED */
+    .service-detail {
+      padding: 5rem 2rem;
+    }
+
+    .service-detail:nth-child(even) {
+      background: var(--lavender-soft);
+    }
+
+    .service-detail .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .service-detail:nth-child(odd) .service-detail-visual { order: -1; }
+
+    .service-detail-visual {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-hover);
+    }
+
+    .service-visual-inner {
+      background: var(--purple-gradient);
+      padding: 3rem;
+      text-align: center;
+      color: white;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-visual-inner::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -20%;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .service-visual-inner::after {
+      content: '';
+      position: absolute;
+      bottom: -20%;
+      left: -10%;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .service-big-icon {
+      font-size: 4.5rem;
+      margin-bottom: 1.5rem;
+      filter: drop-shadow(0 4px 15px rgba(0,0,0,0.2));
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-visual-inner h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-visual-inner p {
+      opacity: 0.8;
+      font-size: 0.88rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-route-badge {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 50px;
+      padding: 0.4rem 1rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      position: relative;
+      z-index: 1;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .service-detail-content h2 {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      color: var(--deep-purple);
+      margin-bottom: 1rem;
+    }
+
+    .service-detail-content p {
+      color: var(--grey-text);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-features {
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(196,181,253,0.2);
+      font-size: 0.9rem;
+      color: #374151;
+    }
+
+    .service-features li:last-child { border: none; }
+
+    .service-features li .check {
+      color: var(--purple-light);
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .service-price-note {
+      background: var(--lavender-soft);
+      border: 1px solid rgba(196,181,253,0.4);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      font-size: 0.85rem;
+      color: var(--deep-purple);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    /* FLEET SECTION */
+    .fleet-section {
+      padding: 5rem 2rem;
+      background: var(--lavender-soft);
+    }
+
+    .fleet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .fleet-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      border: 1px solid rgba(196,181,253,0.2);
+      transition: var(--transition);
+    }
+
+    .fleet-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .fleet-card-top {
+      background: var(--purple-gradient-soft);
+      padding: 2.5rem;
+      text-align: center;
+    }
+
+    .fleet-icon { font-size: 3.5rem; }
+
+    .fleet-card-body { padding: 1.5rem; }
+
+    .fleet-card-body h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--deep-purple);
+      margin-bottom: 0.3rem;
+    }
+
+    .fleet-capacity {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: var(--lavender-soft);
+      color: var(--deep-purple);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.65rem;
+      border-radius: 50px;
+      margin-bottom: 0.75rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .fleet-card-body p {
+      font-size: 0.82rem;
+      color: var(--grey-text);
+      line-height: 1.6;
+    }
+
+    /* PROCESS SECTION */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0;
+      position: relative;
+    }
+
+    .process-step {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      position: relative;
+    }
+
+    .process-step:not(:last-child)::after {
+      content: '→';
+      position: absolute;
+      right: -0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--lavender);
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    .step-num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--purple-gradient);
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      box-shadow: 0 6px 20px rgba(74,14,143,0.3);
+    }
+
+    .process-step h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--deep-purple);
+      margin-bottom: 0.5rem;
+    }
+
+    .process-step p {
+      font-size: 0.82rem;
+      color: var(--grey-text);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+      .services-intro .container,
+      .service-detail .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .service-detail:nth-child(odd) .service-detail-visual { order: unset; }
+      .process-step:not(:last-child)::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" aria-label="Main navigation">
+  <a href="index.html" class="nav-brand" aria-label="France VTC Home">
+    <div class="nav-logo">
+      <img src="logo.jpg" loading="lazy">
+    </div>
+    <div class="nav-title">
+      <span class="nav-title-main">FRANCE VTC</span>
+      <span class="nav-title-sub">Premium Chauffeur Paris</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks" role="list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="tel:+33614332708" class="nav-cta">📞 Book Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>›</span>
+    <span>Our Services</span>
+  </div>
+  <h1>Premium VTC Services Paris</h1>
+  <p>CDG & Orly airport transfers, Disneyland Paris VTC, corporate service and long distance VTC France — all at fixed rates.</p>
+</section>
+
+<!-- INTRO -->
+<section class="services-intro">
+  <div class="container">
+    <div class="intro-text fade-up">
+      <span class="section-label">What We Offer</span>
+      <h2>Every Paris VTC Journey, Covered</h2>
+      <p>Whether you need fast VTC booking Paris for an early-morning flight, a seamless CDG to Disneyland Paris VTC for the family, or a discreet corporate VTC service Paris for your executive team — France VTC has you covered 24 hours a day, 7 days a week.</p>
+      <p>All our rates are fixed and agreed before departure. No meter running, no surge pricing, no hidden extras. Simply the finest door to door VTC Paris experience available.</p>
+      <a href="tel:+33614332708" class="btn-primary">📞 Get a Free Quote Now</a>
+    </div>
+    <div class="intro-visual fade-up">
+      <div class="big-icon">🚙</div>
+      <h3>Always Your Best Option</h3>
+      <p>Professional, licensed VTC drivers with modern premium vehicles</p>
+      <div class="intro-stats">
+        <div class="intro-stat">
+          <span class="intro-stat-num">5K+</span>
+          <span class="intro-stat-label">Transfers Done</span>
+        </div>
+        <div class="intro-stat">
+          <span class="intro-stat-num">24/7</span>
+          <span class="intro-stat-label">Service Hours</span>
+        </div>
+        <div class="intro-stat">
+          <span class="intro-stat-num">0</span>
+          <span class="intro-stat-label">Hidden Fees</span>
+        </div>
+        <div class="intro-stat">
+          <span class="intro-stat-num">★4.9</span>
+          <span class="intro-stat-label">Average Rating</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 1 : CDG -->
+<section class="service-detail" id="cdg" aria-labelledby="cdg-heading">
+  <div class="container">
+    <div class="service-detail-visual fade-in">
+      <div class="service-visual-inner">
+        <div class="service-big-icon">✈️</div>
+        <h3>CDG Airport VTC</h3>
+        <p>Terminals 1, 2 & 3 — all arrivals met</p>
+        <div class="service-route-badge">📍 CDG → Anywhere in Paris</div>
+      </div>
+    </div>
+    <div class="service-detail-content fade-up">
+      <span class="section-label">Airport Transfer</span>
+      <h2 id="cdg-heading">Charles de Gaulle Airport VTC Transfer</h2>
+      <p>Our CDG airport transfer VTC service is the gold standard for arriving passengers. We track your flight in real time, greet you at arrivals with a personalised name board, and have your luxury vehicle waiting — all before your luggage appears on the belt.</p>
+      <p>From CDG to Disneyland Paris VTC, to central Paris hotels, to Versailles or any French city — we handle it all with the same professionalism and punctuality.</p>
+      <div class="service-price-note">💜 Fixed price confirmed at booking. No surprises at journey end.</div>
+      <ul class="service-features">
+        <li><span class="check">✦</span> Meet & greet at all CDG terminals (T1, T2A-G, T3)</li>
+        <li><span class="check">✦</span> Real-time flight monitoring — we wait for delayed flights at no extra charge</li>
+        <li><span class="check">✦</span> 45-minute free waiting time after landing</li>
+        <li><span class="check">✦</span> Luggage assistance included</li>
+        <li><span class="check">✦</span> WiFi, water and phone charging onboard</li>
+        <li><span class="check">✦</span> Child seats available on request (free of charge)</li>
+        <li><span class="check">✦</span> CDG to Disneyland Paris VTC — perfect for family arrivals</li>
+      </ul>
+      <a href="tel:+33614332708" class="btn-primary">Book CDG Transfer</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 2 : ORLY -->
+<section class="service-detail" id="orly" aria-labelledby="orly-heading">
+  <div class="container">
+    <div class="service-detail-content fade-up">
+      <span class="section-label">Orly Airport Transfer</span>
+      <h2 id="orly-heading">Orly to City Centre VTC Service</h2>
+      <p>The Orly to city centre VTC is our most popular business route. Orly serves millions of domestic and European travellers each year — and our chauffeurs know every terminal and exit ramp to get you to Paris faster than any cab.</p>
+      <p>Whether you're heading to Saint-Germain-des-Prés, the Marais, La Défense or any Paris arrondissement, our Orly VTC service delivers you door to door in a premium vehicle.</p>
+      <div class="service-price-note">💜 Typical Orly to Paris centre: 30–45 minutes. Fixed rate, no tolls added.</div>
+      <ul class="service-features">
+        <li><span class="check">✦</span> Orly Sud, Orly Ouest & new Orly 1/2/3/4 terminals served</li>
+        <li><span class="check">✦</span> Arrivals board with your name — no searching, no stress</li>
+        <li><span class="check">✦</span> 40-minute free waiting time after landing</li>
+        <li><span class="check">✦</span> Direct to any Paris or Île-de-France address</li>
+        <li><span class="check">✦</span> Regular Orly to city centre VTC accounts for business clients</li>
+        <li><span class="check">✦</span> Early-morning and late-night transfers available 24/7</li>
+      </ul>
+      <a href="tel:+33614332708" class="btn-primary">Book Orly Transfer</a>
+    </div>
+    <div class="service-detail-visual fade-in">
+      <div class="service-visual-inner" style="background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 60%, #A78BFA 100%);">
+        <div class="service-big-icon">🏙️</div>
+        <h3>Orly to Paris VTC</h3>
+        <p>All Orly terminals — direct to your hotel or office</p>
+        <div class="service-route-badge">📍 Orly → City Centre in 35 min</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 3 : DISNEYLAND -->
+<section class="service-detail" id="disneyland" aria-labelledby="disney-heading">
+  <div class="container">
+    <div class="service-detail-visual fade-in">
+      <div class="service-visual-inner" style="background: linear-gradient(135deg, #3730A3 0%, #6D28D9 60%, #C4B5FD 100%);">
+        <div class="service-big-icon">🏰</div>
+        <h3>Disneyland Paris VTC</h3>
+        <p>The most magical start to your holiday</p>
+        <div class="service-route-badge">📍 CDG / Orly → Disneyland Paris</div>
+      </div>
+    </div>
+    <div class="service-detail-content fade-up">
+      <span class="section-label">Family Transfer</span>
+      <h2 id="disney-heading">CDG to Disneyland Paris VTC — Family Specialists</h2>
+      <p>The most popular route in our portfolio — the CDG to Disneyland Paris VTC is the perfect way for families to start their magical break. No dragging strollers onto the RER, no confusing connections — just a comfortable, private vehicle straight to your Disney hotel.</p>
+      <p>We also offer Disneyland Paris VTC from Orly Airport, from central Paris hotels, and return transfers back to both airports at the end of your stay.</p>
+      <div class="service-price-note">💜 CDG to Disneyland Paris: approximately 40–55 minutes. Family vehicles available.</div>
+      <ul class="service-features">
+        <li><span class="check">✦</span> Direct from any CDG or Orly terminal to all Disneyland hotels</li>
+        <li><span class="check">✦</span> V-Class minivans for groups up to 7 passengers</li>
+        <li><span class="check">✦</span> Child seats and booster seats — no extra cost</li>
+        <li><span class="check">✦</span> Entertainment tablets for children on request</li>
+        <li><span class="check">✦</span> Return transfers bookable at same time</li>
+        <li><span class="check">✦</span> English-speaking drivers experienced with family travel</li>
+      </ul>
+      <a href="tel:+33614332708" class="btn-primary">Book Disneyland Transfer</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 4 : CORPORATE -->
+<section class="service-detail" id="corporate" aria-labelledby="corporate-heading">
+  <div class="container">
+    <div class="service-detail-content fade-up">
+      <span class="section-label">Business Travel</span>
+      <h2 id="corporate-heading">Corporate VTC Service Paris</h2>
+      <p>Our corporate VTC service Paris is built for the demands of business travel. Silent, discreet, punctual — our executive chauffeurs understand that time is money and privacy is everything for today's professional traveller.</p>
+      <p>We serve law firms, investment banks, tech companies, and multinationals across Paris. Corporate accounts benefit from monthly invoicing, fixed rates, priority dispatch, and a dedicated account manager.</p>
+      <div class="service-price-note">💜 Corporate accounts welcome — VAT invoicing, monthly billing and custom SLA available.</div>
+      <ul class="service-features">
+        <li><span class="check">✦</span> Dedicated corporate chauffeurs — same driver when possible</li>
+        <li><span class="check">✦</span> Mercedes S-Class and E-Class for executive clients</li>
+        <li><span class="check">✦</span> Monthly invoicing and VAT receipts</li>
+        <li><span class="check">✦</span> Roadshows, board meetings, investor days covered</li>
+        <li><span class="check">✦</span> NDA-compliant service — complete discretion assured</li>
+        <li><span class="check">✦</span> 24/7 priority booking line for corporate accounts</li>
+        <li><span class="check">✦</span> La Défense, Neuilly, CNIT, Palais des Congrès — all covered</li>
+      </ul>
+      <a href="tel:+33614332708" class="btn-primary">Open Corporate Account</a>
+    </div>
+    <div class="service-detail-visual fade-in">
+      <div class="service-visual-inner" style="background: linear-gradient(135deg, #2D0660 0%, #4A0E8F 60%, #7C3AED 100%);">
+        <div class="service-big-icon">💼</div>
+        <h3>Corporate VTC Paris</h3>
+        <p>Executive transport for Paris professionals</p>
+        <div class="service-route-badge">📍 La Défense • CNIT • Palais des Congrès</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 5 : LONG DISTANCE -->
+<section class="service-detail" id="longdistance" aria-labelledby="longdistance-heading">
+  <div class="container">
+    <div class="service-detail-visual fade-in">
+      <div class="service-visual-inner" style="background: linear-gradient(135deg, #4A0E8F 0%, #6B21CC 60%, #A78BFA 100%);">
+        <div class="service-big-icon">🛣️</div>
+        <h3>Long Distance VTC France</h3>
+        <p>Paris to any French city — flat rate, private ride</p>
+        <div class="service-route-badge">📍 Paris → Lyon | Nice | Bordeaux | Marseille</div>
+      </div>
+    </div>
+    <div class="service-detail-content fade-up">
+      <span class="section-label">Intercity Travel</span>
+      <h2 id="longdistance-heading">Long Distance VTC France — City to City</h2>
+      <p>When you need to travel further than Île-de-France, our long distance VTC France service offers the most comfortable and efficient way to move between French cities. Fixed rate, private vehicle, professional driver — no stops unless you want them.</p>
+      <p>Whether it's Paris to Lyon for a same-day meeting, Paris to Nice for a coastal retreat, or Paris to Brussels for a cross-border commitment — France VTC delivers you in complete comfort.</p>
+      <div class="service-price-note">💜 All long distance VTC France prices quoted upfront including motorway tolls.</div>
+      <ul class="service-features">
+        <li><span class="check">✦</span> Paris–Lyon (~4h), Paris–Nice (~7h), Paris–Bordeaux (~5h)</li>
+        <li><span class="check">✦</span> All tolls included in the fixed price — zero extras</li>
+        <li><span class="check">✦</span> WiFi, water, snacks and phone charging throughout</li>
+        <li><span class="check">✦</span> One-way and return trips available</li>
+        <li><span class="check">✦</span> Multi-stop itineraries for touring clients</li>
+        <li><span class="check">✦</span> Available for medical transport and repatriation journeys</li>
+      </ul>
+      <a href="tel:+33614332708" class="btn-primary">Get Long Distance Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 6 : DOOR TO DOOR -->
+<section class="service-detail" id="doortodoor" aria-labelledby="dtd-heading">
+  <div class="container">
+    <div class="service-detail-content fade-up">
+      <span class="section-label">City Transfers</span>
+      <h2 id="dtd-heading">Door to Door VTC Paris — Any Address</h2>
+      <p>Our door to door VTC Paris service is exactly what it sounds like: we come to your address, pick you up at your door, and deliver you right to your destination — no walking, no waiting, no stress.</p>
+      <p>Perfect for theatre evenings, restaurant dinners, event transfers, medical appointments, or simply getting across Paris in style. Available every hour, every day.</p>
+      <div class="service-price-note">💜 Hourly disposals available for full-day city touring or event coverage.</div>
+      <ul class="service-features">
+        <li><span class="check">✦</span> Any Paris address, arrondissement, suburb or venue</li>
+        <li><span class="check">✦</span> Hourly chauffeur disposals from 2 hours minimum</li>
+        <li><span class="check">✦</span> Night transfers and event pickups included</li>
+        <li><span class="check">✦</span> Concierge service — we can book restaurants and venues</li>
+        <li><span class="check">✦</span> Ideal for wedding and VIP event transfers</li>
+        <li><span class="check">✦</span> Paris Disneyland, Versailles and Fontainebleau day trips</li>
+      </ul>
+      <a href="tel:+33614332708" class="btn-primary">Book Door to Door</a>
+    </div>
+    <div class="service-detail-visual fade-in">
+      <div class="service-visual-inner" style="background: linear-gradient(135deg, #5B21B6 0%, #8B5CF6 60%, #C4B5FD 100%);">
+        <div class="service-big-icon">🚪</div>
+        <h3>Door to Door Paris</h3>
+        <p>Any address in Paris — picked up and delivered</p>
+        <div class="service-route-badge">📍 Your Door → Any Destination</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-logo">
+        <div class="footer-logo-box">
+          <img src="logo.jpg" alt="France VTC">
+        </div>
+        <span class="footer-brand-name">FRANCE VTC</span>
+      </div>
+      <p class="footer-tagline">Premium Paris VTC chauffeur service. CDG, Orly and Disneyland transfers. Corporate & long distance VTC France. Available 24/7.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Facebook">f</a>
+        <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+        <a href="https://wa.me/33609713638" class="social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About France VTC</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#cdg">CDG Airport Transfers</a></li>
+        <li><a href="#orly">Orly to City Centre VTC</a></li>
+        <li><a href="#disneyland">Disneyland Paris VTC</a></li>
+        <li><a href="#corporate">Corporate VTC Paris</a></li>
+        <li><a href="#longdistance">Long Distance France</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+33614332708" style="color:rgba(255,255,255,0.85);text-decoration:none;">+33 (6) 1 43 327 081</a></div>
+      <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+33609713638" style="color:rgba(255,255,255,0.85);text-decoration:none;">+33 (0)6 09 71 36 38</a></div>
+      <div class="footer-contact-item"><span class="icon">💬</span><a href="https://wa.me/33609713638" style="color:rgba(255,255,255,0.85);text-decoration:none;" target="_blank" rel="noopener">WhatsApp Us</a></div>
+      <div class="footer-contact-item"><span class="icon">🕐</span><span>24/7 — Every day</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 France VTC. All rights reserved.</span>
+    <span>CDG • Orly • Disneyland • Long Distance VTC France</span>
+  </div>
+</footer>
+
+<!-- FLOATING CALL -->
+<div class="float-call" role="complementary">
+  <a href="https://wa.me/33609713638" class="float-btn float-wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <a href="tel:+33614332708" class="float-btn float-call-btn float-pulse" aria-label="Call France VTC">📞</a>
+</div>
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 30); });
+
+const ham = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+ham.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  ham.setAttribute('aria-expanded', isOpen);
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-up, .fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4A0E8F">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="France VTC">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.google.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About France VTC | Professional Paris Chauffeur Company – Story, Fleet & Values</title>
+  <meta name="description" content="Learn about France VTC — Paris's trusted door to door VTC company. Our story, professional drivers, premium fleet, and commitment to excellence for every CDG, Orly and corporate VTC service Paris.">
+  <meta name="keywords" content="about France VTC, Paris VTC company, professional VTC drivers Paris, VTC Paris fleet, corporate VTC service Paris, door to door VTC Paris history">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.francevtc.com/about.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About France VTC | Professional Paris Chauffeur Company">
+  <meta property="og:description" content="Our story, professional drivers, fleet and values. France VTC — trusted Paris VTC chauffeur service since our founding.">
+  <meta property="og:url" content="https://www.francevtc.com/about.html">
+  <meta property="og:site_name" content="France VTC">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About France VTC | Paris Chauffeur Company">
+  <meta name="twitter:description" content="Meet the team behind Paris's finest VTC service. Professional drivers, premium fleet, values-led transport.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About France VTC",
+    "url": "https://www.francevtc.com/about.html",
+    "description": "France VTC is a professional Paris VTC chauffeur company specialising in CDG and Orly airport transfers, corporate transport and long distance VTC France.",
+    "mainEntity": {
+      "@type": "TaxiService",
+      "name": "France VTC",
+      "foundingDate": "2015",
+      "description": "Premium Paris VTC chauffeur service",
+      "telephone": "+33614332708",
+      "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" }
+    }
+  }
+  </script>
+
+  <style>
+/* ===== FRANCE VTC - SHARED STYLES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --deep-purple: #4A0E8F;
+  --purple-mid: #6B21CC;
+  --purple-light: #8B5CF6;
+  --lavender: #C4B5FD;
+  --lavender-soft: #EDE9FE;
+  --silver: #F8F7FF;
+  --silver-mid: #E8E4F0;
+  --grey-light: #F3F4F6;
+  --grey-mid: #9CA3AF;
+  --grey-text: #6B7280;
+  --white: #FFFFFF;
+  --purple-dark: #2D0660;
+  --purple-gradient: linear-gradient(135deg, #2D0660 0%, #4A0E8F 35%, #6B21CC 70%, #8B5CF6 100%);
+  --purple-gradient-soft: linear-gradient(135deg, #4A0E8F 0%, #7C3AED 50%, #A78BFA 100%);
+  --shadow-soft: 0 4px 24px rgba(74, 14, 143, 0.12);
+  --shadow-card: 0 8px 32px rgba(74, 14, 143, 0.15);
+  --shadow-hover: 0 16px 48px rgba(74, 14, 143, 0.25);
+  --radius: 16px;
+  --radius-lg: 24px;
+  --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2D0660;
+  background: var(--white);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+h4, h5, h6, nav, button { font-family: 'Montserrat', sans-serif; }
+
+.section-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--purple-light);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 2rem;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(196, 181, 253, 0.3);
+  box-shadow: 0 2px 20px rgba(74,14,143,0.08);
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  background: rgba(255,255,255,0.98);
+  box-shadow: 0 4px 30px rgba(74,14,143,0.15);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--purple-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-title-main {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--deep-purple);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.nav-title-sub {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--purple-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  color: #4B5563;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--deep-purple);
+  background: var(--lavender-soft);
+}
+
+.nav-cta {
+  background: var(--purple-gradient) !important;
+  color: white !important;
+  padding: 0.55rem 1.2rem !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 15px rgba(74,14,143,0.3) !important;
+}
+
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(74,14,143,0.4) !important;
+  background: var(--lavender-soft) !important;
+  color: var(--deep-purple) !important;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  background: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--deep-purple);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--purple-gradient);
+  color: white;
+  padding: 4rem 2rem 1.5rem;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.footer-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+}
+
+.footer-logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.footer-brand-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-tagline {
+  font-size: 0.82rem;
+  opacity: 0.75;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+
+.social-btn:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-2px);
+}
+
+.footer-col h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  opacity: 0.6;
+}
+
+.footer-col ul { list-style: none; }
+
+.footer-col ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.875rem;
+  transition: var(--transition);
+}
+
+.footer-col ul li a:hover {
+  color: white;
+  padding-left: 4px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.footer-contact-item .icon { flex-shrink: 0; margin-top: 2px; }
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  opacity: 0.6;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ===== FLOATING CALL BUTTON ===== */
+.float-call {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.float-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transition: var(--transition);
+  position: relative;
+}
+
+.float-btn:hover {
+  transform: scale(1.1) translateY(-3px);
+}
+
+.float-call-btn {
+  background: var(--purple-gradient);
+  color: white;
+}
+
+.float-wa-btn {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+}
+
+.float-pulse::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: rgba(107, 33, 204, 0.35);
+  animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.fade-in.visible { opacity: 1; }
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--purple-gradient);
+  color: white;
+  text-decoration: none;
+  padding: 0.85rem 2rem;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 6px 24px rgba(74,14,143,0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(74,14,143,0.45);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--deep-purple);
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 2px solid var(--purple-light);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background: var(--lavender-soft);
+  border-color: var(--deep-purple);
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  color: var(--deep-purple);
+  text-decoration: none;
+  padding: 0.85rem 2rem;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.btn-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(196,181,253,0.2);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(196,181,253,0.5);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 6rem 2rem;
+}
+
+.section-alt {
+  background: var(--lavender-soft);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--deep-purple);
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1.05rem;
+  color: var(--grey-text);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== ICON BOX ===== */
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: var(--lavender-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+}
+
+.card:hover .icon-box {
+  background: var(--purple-gradient);
+  transform: scale(1.1);
+}
+
+/* ===== BADGE ===== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--lavender-soft);
+  color: var(--deep-purple);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+  border: 1px solid rgba(196,181,253,0.5);
+}
+
+/* ===== STARS ===== */
+.stars { color: #A78BFA; letter-spacing: 2px; }
+
+/* ===== DIVIDER ===== */
+.divider {
+  width: 60px;
+  height: 4px;
+  background: var(--purple-gradient);
+  border-radius: 2px;
+  margin: 1.2rem auto;
+}
+
+/* ===== PAGE HERO (inner pages) ===== */
+.page-hero {
+  background: var(--purple-gradient);
+  padding: 8rem 2rem 5rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='1' fill='rgba(255,255,255,0.06)'/%3E%3C/svg%3E");
+}
+
+.page-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.breadcrumb a { color: white; text-decoration: none; }
+.breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 72px; left: 0; right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-shadow: 0 8px 30px rgba(74,14,143,0.15);
+    gap: 0.25rem;
+  }
+
+  .nav-links.open { display: flex; }
+  .nav-links a { display: block; padding: 0.75rem 1rem; }
+  .hamburger { display: flex; }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .section { padding: 4rem 1.25rem; }
+  .float-call { bottom: 1.25rem; right: 1.25rem; }
+}
+
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+</style>
+  <style>
+    /* ===== ABOUT PAGE STYLES ===== */
+
+    .story-section {
+      padding: 5rem 2rem;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .story-content h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--deep-purple);
+      margin-bottom: 1.25rem;
+    }
+
+    .story-content p {
+      color: var(--grey-text);
+      font-size: 0.95rem;
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+
+    .story-milestones {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .milestone {
+      background: var(--lavender-soft);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      border-left: 4px solid var(--purple-light);
+    }
+
+    .milestone-year {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--deep-purple);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .milestone p {
+      margin: 0;
+      font-size: 0.82rem;
+      color: var(--grey-text);
+    }
+
+    .story-visual {
+      position: relative;
+    }
+
+    .story-main-visual {
+      background: var(--purple-gradient);
+      border-radius: var(--radius-lg);
+      padding: 4rem 2.5rem;
+      text-align: center;
+      color: white;
+      box-shadow: var(--shadow-hover);
+    }
+
+    .story-main-visual .big-icon { font-size: 5rem; margin-bottom: 1.5rem; }
+    .story-main-visual h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .story-main-visual p { opacity: 0.8; font-size: 0.9rem; }
+
+    .story-float-card {
+      position: absolute;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      background: white;
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow-hover);
+      text-align: center;
+      min-width: 160px;
+    }
+
+    .story-float-card .num {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 2rem;
+      color: var(--deep-purple);
+      display: block;
+      line-height: 1;
+    }
+
+    .story-float-card span {
+      font-size: 0.75rem;
+      color: var(--grey-text);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+
+    /* NUMBERS */
+    .numbers-section {
+      background: var(--purple-gradient);
+      padding: 4rem 2rem;
+    }
+
+    .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .number-item {
+      text-align: center;
+      color: white;
+    }
+
+    .number-item .big-num {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: 3rem;
+      display: block;
+      color: var(--lavender);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .number-item p {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      font-weight: 500;
+    }
+
+    /* DRIVERS */
+    .drivers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .driver-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      border: 1px solid rgba(196,181,253,0.2);
+      transition: var(--transition);
+      text-align: center;
+    }
+
+    .driver-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .driver-avatar-area {
+      background: var(--purple-gradient-soft);
+      padding: 2.5rem 2rem 2rem;
+    }
+
+    .driver-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--purple-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto;
+      border: 4px solid white;
+      box-shadow: 0 4px 15px rgba(74,14,143,0.2);
+    }
+
+    .driver-card-body { padding: 1.5rem; }
+
+    .driver-card-body h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--deep-purple);
+      margin-bottom: 0.25rem;
+    }
+
+    .driver-role {
+      font-size: 0.78rem;
+      color: var(--purple-light);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    .driver-card-body p {
+      font-size: 0.82rem;
+      color: var(--grey-text);
+      line-height: 1.6;
+    }
+
+    .driver-langs {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .lang-badge {
+      background: var(--lavender-soft);
+      color: var(--deep-purple);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 50px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* VALUES */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .value-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(196,181,253,0.2);
+      border-top: 4px solid var(--purple-light);
+      transition: var(--transition);
+    }
+
+    .value-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+      border-top-color: var(--deep-purple);
+    }
+
+    .value-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .value-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--deep-purple);
+      margin-bottom: 0.6rem;
+    }
+
+    .value-card p {
+      font-size: 0.875rem;
+      color: var(--grey-text);
+      line-height: 1.7;
+    }
+
+    /* CERTIFICATIONS */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .cert-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(196,181,253,0.25);
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: var(--transition);
+    }
+
+    .cert-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card); }
+
+    .cert-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--purple-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .cert-info strong {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      color: var(--deep-purple);
+      margin-bottom: 0.2rem;
+    }
+
+    .cert-info span {
+      font-size: 0.78rem;
+      color: var(--grey-text);
+    }
+
+    /* TRUST */
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .trust-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-card);
+      border: 1px solid rgba(196,181,253,0.2);
+      transition: var(--transition);
+    }
+
+    .trust-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+
+    .trust-card .stars { font-size: 1rem; }
+
+    .trust-card p {
+      font-size: 0.88rem;
+      color: var(--grey-text);
+      line-height: 1.7;
+      margin: 0.75rem 0;
+      font-style: italic;
+    }
+
+    .trust-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .trust-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--purple-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .trust-author-text strong {
+      display: block;
+      font-size: 0.85rem;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--deep-purple);
+    }
+
+    .trust-author-text span { font-size: 0.75rem; color: var(--grey-text); }
+
+    @media (max-width: 900px) {
+      .story-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .story-float-card { position: static; margin-top: 1rem; display: inline-block; }
+      .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 480px) {
+      .numbers-grid { grid-template-columns: 1fr 1fr; }
+      .story-milestones { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar" aria-label="Main navigation">
+  <a href="index.html" class="nav-brand" aria-label="France VTC Home">
+    <div class="nav-logo">
+      <img src="logo.jpg" loading="lazy">
+    </div>
+    <div class="nav-title">
+      <span class="nav-title-main">FRANCE VTC</span>
+      <span class="nav-title-sub">Premium Chauffeur Paris</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks" role="list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html" class="active" aria-current="page">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="tel:+33614332708" class="nav-cta">📞 Book Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>›</span>
+    <span>About Us</span>
+  </div>
+  <h1>About France VTC</h1>
+  <p>A Paris chauffeur company built on trust, professionalism and a passion for exceptional transport.</p>
+</section>
+
+<!-- STORY -->
+<section class="story-section" aria-labelledby="story-heading">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-content fade-up">
+        <span class="section-label">Our Story</span>
+        <h2 id="story-heading">Born in Paris, Driven by Excellence</h2>
+        <p>France VTC was founded with a single mission: to offer Parisians, visitors and business travellers a premium VTC experience that matched the elegance of the city itself. We believed — and still believe — that travelling between a Paris airport and your destination should be as beautiful as Paris itself.</p>
+        <p>We began with two Mercedes vehicles and a commitment to never compromise on punctuality or professionalism. That commitment earned us a reputation as the go-to provider for CDG to Disneyland Paris VTC families, Orly to city centre VTC professionals, and corporate VTC service Paris executives who demand nothing but the best.</p>
+        <p>Today, France VTC operates a growing fleet of premium Mercedes vehicles across the Île-de-France region and beyond, offering long distance VTC France services to every major French city and a door to door VTC Paris experience that consistently earns 5-star reviews.</p>
+        <div class="story-milestones">
+          <div class="milestone">
+            <span class="milestone-year">🏁 Founded</span>
+            <p>Started with 2 cars in Paris, serving CDG airport transfers</p>
+          </div>
+          <div class="milestone">
+            <span class="milestone-year">✈️ Expanded</span>
+            <p>Added Orly routes and Disneyland Paris VTC service</p>
+          </div>
+          <div class="milestone">
+            <span class="milestone-year">💼 Corporate</span>
+            <p>Launched corporate VTC service Paris — now serving 50+ companies</p>
+          </div>
+          <div class="milestone">
+            <span class="milestone-year">🇫🇷 France-wide</span>
+            <p>Launched long distance VTC France — Paris to all major cities</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-visual fade-in">
+        <div class="story-main-visual">
+          <div class="big-icon">🚙</div>
+          <h3>Premium Since Day One</h3>
+          <p>Every journey treated as if the client is our only client</p>
+        </div>
+        <div class="story-float-card">
+          <span class="num">★ 4.9</span>
+          <span>Average Rating</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="numbers-section" aria-labelledby="numbers-heading">
+  <div class="numbers-grid">
+    <div class="number-item fade-up">
+      <span class="big-num">5000+</span>
+      <p>Successful transfers completed</p>
+    </div>
+    <div class="number-item fade-up">
+      <span class="big-num">50+</span>
+      <p>Corporate VTC Paris clients</p>
+    </div>
+    <div class="number-item fade-up">
+      <span class="big-num">24/7</span>
+      <p>Available every day of the year</p>
+    </div>
+    <div class="number-item fade-up">
+      <span class="big-num">100%</span>
+      <p>Fixed-rate, transparent pricing</p>
+    </div>
+  </div>
+</section>
+
+<!-- DRIVERS -->
+<section class="section" aria-labelledby="drivers-heading">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-label">Our Team</span>
+      <h2 id="drivers-heading">Professional VTC Drivers — Licensed & Trained</h2>
+      <div class="divider"></div>
+      <p>Every France VTC chauffeur holds an official French VTC licence and has undergone our internal executive hospitality training.</p>
+    </div>
+    <div class="drivers-grid">
+      <div class="driver-card fade-up">
+        <div class="driver-avatar-area">
+          <div class="driver-avatar">👨‍✈️</div>
+        </div>
+        <div class="driver-card-body">
+          <h3>Alexandre M.</h3>
+          <span class="driver-role">Senior Chauffeur — CDG Specialist</span>
+          <p>10 years experience in VTC Paris. Expert in CDG to Disneyland Paris VTC routes and corporate airport pickups. Known for precise timing and calm manner.</p>
+          <div class="driver-langs">
+            <span class="lang-badge">🇫🇷 French</span>
+            <span class="lang-badge">🇬🇧 English</span>
+            <span class="lang-badge">🇪🇸 Spanish</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="driver-card fade-up">
+        <div class="driver-avatar-area">
+          <div class="driver-avatar">👩‍✈️</div>
+        </div>
+        <div class="driver-card-body">
+          <h3>Isabelle T.</h3>
+          <span class="driver-role">Executive Chauffeur — Corporate VTC</span>
+          <p>Specialist in corporate VTC service Paris for female executives and solo travellers. Discreet, professional, highly rated by all La Défense clients.</p>
+          <div class="driver-langs">
+            <span class="lang-badge">🇫🇷 French</span>
+            <span class="lang-badge">🇬🇧 English</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="driver-card fade-up">
+        <div class="driver-avatar-area">
+          <div class="driver-avatar">👨‍✈️</div>
+        </div>
+        <div class="driver-card-body">
+          <h3>Karim B.</h3>
+          <span class="driver-role">Long Distance VTC France Specialist</span>
+          <p>Our long distance VTC France expert. Has driven Paris–Nice, Paris–Lyon, Paris–Bordeaux hundreds of times. Knows every route and rest stop in France.</p>
+          <div class="driver-langs">
+            <span class="lang-badge">🇫🇷 French</span>
+            <span class="lang-badge">🇬🇧 English</span>
+            <span class="lang-badge">🇸🇦 Arabic</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="driver-card fade-up">
+        <div class="driver-avatar-area">
+          <div class="driver-avatar">👨‍✈️</div>
+        </div>
+        <div class="driver-card-body">
+          <h3>Thomas R.</h3>
+          <span class="driver-role">Family Transfer & Orly Specialist</span>
+          <p>Our Orly to city centre VTC expert. Certified in child seat installation and family transport. Parents love his patience and friendly approach with children.</p>
+          <div class="driver-langs">
+            <span class="lang-badge">🇫🇷 French</span>
+            <span class="lang-badge">🇬🇧 English</span>
+            <span class="lang-badge">🇩🇪 German</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;padding:1.5rem;background:var(--lavender-soft);border-radius:var(--radius);border:1px solid rgba(196,181,253,0.35);" class="fade-up">
+      <p style="font-size:0.9rem;color:var(--grey-text);text-align:center;"><strong style="color:var(--deep-purple);">All France VTC drivers are:</strong> Officially licensed with a French VTC carte professionnelle • First-aid certified • Background checked • Trained in executive hospitality • Committed to punctuality and discretion</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-logo">
+        <div class="footer-logo-box">
+          <img src="logo.jpg" alt="France VTC">
+        </div>
+        <span class="footer-brand-name">FRANCE VTC</span>
+      </div>
+      <p class="footer-tagline">Premium Paris VTC chauffeur service. CDG, Orly and Disneyland transfers. Corporate & long distance VTC France. Available 24/7.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Facebook">f</a>
+        <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+        <a href="https://wa.me/33609713638" class="social-btn" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About France VTC</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="services.html#cdg">CDG Airport Transfers</a></li>
+        <li><a href="services.html#orly">Orly to City Centre VTC</a></li>
+        <li><a href="services.html#disneyland">Disneyland Paris VTC</a></li>
+        <li><a href="services.html#corporate">Corporate VTC Paris</a></li>
+        <li><a href="services.html#longdistance">Long Distance France</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+33614332708" style="color:rgba(255,255,255,0.85);text-decoration:none;">+33 (6) 1 43 327 081</a></div>
+      <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+33609713638" style="color:rgba(255,255,255,0.85);text-decoration:none;">+33 (0)6 09 71 36 38</a></div>
+      <div class="footer-contact-item"><span class="icon">💬</span><a href="https://wa.me/33609713638" style="color:rgba(255,255,255,0.85);text-decoration:none;" target="_blank" rel="noopener">WhatsApp Us</a></div>
+      <div class="footer-contact-item"><span class="icon">🕐</span><span>24/7 — Every day</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 France VTC. All rights reserved.</span>
+    <span>CDG • Orly • Disneyland • Long Distance VTC France</span>
+  </div>
+</footer>
+
+<!-- FLOATING CALL -->
+<div class="float-call" role="complementary">
+  <a href="https://wa.me/33609713638" class="float-btn float-wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <a href="tel:+33614332708" class="float-btn float-call-btn float-pulse" aria-label="Call France VTC">📞</a>
+</div>
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 30); });
+
+const ham = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+ham.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  ham.setAttribute('aria-expanded', isOpen);
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-up, .fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
